@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./control.js"></script>
+    <link rel="stylesheet" href="./unidad8.css">
+</head>
+<body>
+    <form method="POST" action="./action.php" id="loginForm" name="loginForm">
+        <h3>Formulario</h3>
+        <div class="login_form-control">
+            <label for="user">Usuario</label>
+            <input type="text" placeholder="usuario" name="user" id="user" pattern="[\w.]@" required>
+            <p class="login_form-control-message"></p>
+        </div>
+        <div class="login_form-control">
+            <label for="password">Clave</label>
+            <input type="password" placeholder="clave" name="password" id="password" required>
+            <p class="login_form-control-message"></p>
+        </div>
+        <button class="login_button" type="submit" id="btnSubmit">Ingresar</button>  
+    </form>
+</body>
+</html>
